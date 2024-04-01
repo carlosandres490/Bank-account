@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<toaster-container [toasterconfig]="toasterconfig"></toaster-container>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link text-light" [routerLink]="['home']">Home Page</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" [routerLink]="['accounts']">Cuentas Bancarias</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" [routerLink]="['accounts/new']">Crear nueva cuenta</a>
+    </li>
+  </ul>
+</nav>
+
+<main class="container">
+  <!-- <button class="btn btn-info" (click)="onClick()">Boton de Alerta</button> -->
+  <br>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <br>
+</footer>
